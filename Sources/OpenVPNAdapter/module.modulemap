@@ -1,5 +1,4 @@
 framework module OpenVPNAdapter {
    header "Umbrella-Header.h"
    export *
-   module * { export * }
 }

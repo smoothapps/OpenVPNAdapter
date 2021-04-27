@@ -134,8 +134,7 @@ NS_SWIFT_NAME(openVPNAdapter(_:handleEvent:message:));
  @return An object describing the configuration which has been evaluated.
  */
 + (nullable OpenVPNConfigurationEvaluation *)evaluateConfiguration:(OpenVPNConfiguration *)configuration
-                                                             error:(NSError **)error
-NS_SWIFT_NAME(evaluate(configuration:));
+                                                             error:(NSError **)error NS_SWIFT_NAME(evaluate(configuration:));
 
 /**
  Applies the given configuration object.
@@ -146,8 +145,7 @@ NS_SWIFT_NAME(evaluate(configuration:));
  @return An object describing the configuration which has been applied.
  */
 - (nullable OpenVPNConfigurationEvaluation *)applyConfiguration:(OpenVPNConfiguration *)configuration
-                                             error:(NSError **)error
-NS_SWIFT_NAME(apply(configuration:));
+                                             error:(NSError **)error NS_SWIFT_NAME(apply(configuration:));
 
 /**
  Provides credentials to the receiver.
